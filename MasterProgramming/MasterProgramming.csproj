@@ -50,7 +50,7 @@
     <ApplicationIcon>Alecive-Flatwoken-Apps-Telegram.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>B37C1598DD3819EC48A86AAA3F3D6D855FFD231C</ManifestCertificateThumbprint>
