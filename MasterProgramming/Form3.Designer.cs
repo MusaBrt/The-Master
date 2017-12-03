@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -351,6 +352,17 @@
             this.button23.UseVisualStyleBackColor = true;
             this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
+            // button24
+            // 
+            this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button24.Location = new System.Drawing.Point(360, 229);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(43, 38);
+            this.button24.TabIndex = 40;
+            this.button24.Text = "Üs";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,6 +370,7 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(429, 381);
+            this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.label1);
@@ -427,5 +440,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button24;
     }
 }

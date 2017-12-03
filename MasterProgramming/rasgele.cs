@@ -34,7 +34,7 @@ namespace MasterProgramming
                 sayi2 = Convert.ToInt32(textBox2.Text);
 
                 Random rnd = new Random();
-                int random = rnd.Next(sayi1, sayi2);
+                double random = rnd.Next(sayi1, sayi2);
 
                 label4.Text = "" + random;
 
