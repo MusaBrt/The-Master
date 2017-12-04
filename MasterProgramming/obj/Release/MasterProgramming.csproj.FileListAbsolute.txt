@@ -22,3 +22,5 @@ C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\Maste
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.ortalama8.resources
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.rasgele.resources
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.kb.resources
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\Interop.Shell32.dll
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.csproj.ResolveComReference.cache

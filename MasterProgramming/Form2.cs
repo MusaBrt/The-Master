@@ -629,5 +629,131 @@ namespace MasterProgramming
         {
             MessageBox.Show("Nüfus bilgileri Aralık 2017 baz alınarak yapılmıştır.", "İl Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0) {
+                comboBox2.Items.Add("Aladağ");
+                comboBox2.Items.Add("Ceyhan");
+                comboBox2.Items.Add("Çukurova");
+                comboBox2.Items.Add("Feke");
+                comboBox2.Items.Add("İmamoğlu");
+                comboBox2.Items.Add("Karaisalı");
+                comboBox2.Items.Add("Karataş");
+                comboBox2.Items.Add("Kozan");
+                comboBox2.Items.Add("Pozantı");
+                comboBox2.Items.Add("Saimbeyli");
+                comboBox2.Items.Add("Sarıçam");
+                comboBox2.Items.Add("Seyhan");
+                comboBox2.Items.Add("Tufanbeyli");
+                comboBox2.Items.Add("Yumurtalık");
+                comboBox2.Items.Add("Yüreğir");
+            }
+            else if (comboBox1.SelectedIndex == 1) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Besni");
+                comboBox2.Items.Add("Çelikhan");
+                comboBox2.Items.Add("Gerger");
+                comboBox2.Items.Add("Gölbaşı");
+                comboBox2.Items.Add("Kahta");
+                comboBox2.Items.Add("Samsat");
+                comboBox2.Items.Add("Sincik");
+                comboBox2.Items.Add("Tut");
+            }
+            else if (comboBox1.SelectedIndex == 2) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Başmakçı");
+                comboBox2.Items.Add("Bayat");
+                comboBox2.Items.Add("Bolvadin");
+                comboBox2.Items.Add("Çay");
+                comboBox2.Items.Add("Çobanlar");
+                comboBox2.Items.Add("Dazkırı");
+                comboBox2.Items.Add("Dinar");
+                comboBox2.Items.Add("Emirdağ");
+                comboBox2.Items.Add("Evciler");
+                comboBox2.Items.Add("Hocalar");
+                comboBox2.Items.Add("İhsaniye");
+                comboBox2.Items.Add("İscehisar");
+                comboBox2.Items.Add("Kızılören");
+                comboBox2.Items.Add("Sandıklı");
+                comboBox2.Items.Add("Sincanlı");
+                comboBox2.Items.Add("Sultandağı");
+                comboBox2.Items.Add("Şuhut");
+            }
+            else if (comboBox1.SelectedIndex == 3) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Diyadin");
+                comboBox2.Items.Add("Doğubayazıt");
+                comboBox2.Items.Add("Eleşkirt");
+                comboBox2.Items.Add("Hamur");
+                comboBox2.Items.Add("Patnos");
+                comboBox2.Items.Add("Taşlıçay");
+                comboBox2.Items.Add("Tutak");
+            }
+            else if (comboBox1.SelectedIndex == 4) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Göynücek");
+                comboBox2.Items.Add("Gümüşhacıköy");
+                comboBox2.Items.Add("Hamamözü");
+                comboBox2.Items.Add("Merzifon");
+                comboBox2.Items.Add("Suluova");
+                comboBox2.Items.Add("Taşova");
+            }
+            else if (comboBox1.SelectedIndex == 5) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Akyurt");
+                comboBox2.Items.Add("Altındağ");
+                comboBox2.Items.Add("Ayaş");
+                comboBox2.Items.Add("Bala");
+                comboBox2.Items.Add("Beypazarı");
+                comboBox2.Items.Add("Çamlıdere");
+                comboBox2.Items.Add("Çankaya");
+                comboBox2.Items.Add("Çubuk");
+                comboBox2.Items.Add("Elmadağ");
+                comboBox2.Items.Add("Etimesgut");
+                comboBox2.Items.Add("Evren");
+                comboBox2.Items.Add("Gölbaşı");
+                comboBox2.Items.Add("Güdül");
+                comboBox2.Items.Add("Haymana");
+                comboBox2.Items.Add("Kalecik");
+                comboBox2.Items.Add("Kazan");
+                comboBox2.Items.Add("Keçiören");
+                comboBox2.Items.Add("Kızılcahamam");
+                comboBox2.Items.Add("Mamak");
+                comboBox2.Items.Add("Nallıhan");
+                comboBox2.Items.Add("Polatlı");
+                comboBox2.Items.Add("Pursaklar");
+                comboBox2.Items.Add("Sincan");
+                comboBox2.Items.Add("Şereflikoçhisar");
+                comboBox2.Items.Add("Yenimahalle");
+
+            }
+            else if (comboBox1.SelectedIndex == 6) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("Akseki");
+                comboBox2.Items.Add("Aksu");
+                comboBox2.Items.Add("Alanya");
+                comboBox2.Items.Add("Demre");
+                comboBox2.Items.Add("Döşemealtı");
+                comboBox2.Items.Add("Elmalı");
+                comboBox2.Items.Add("Finike");
+                comboBox2.Items.Add("Gazipaşa");
+                comboBox2.Items.Add("Gündoğmuş");
+                comboBox2.Items.Add("İbradı");
+                comboBox2.Items.Add("Kaş");
+                comboBox2.Items.Add("Kemer");
+                comboBox2.Items.Add("Kepez");
+                comboBox2.Items.Add("Konyaaltı");
+                comboBox2.Items.Add("Korkuteli");
+                comboBox2.Items.Add("Kumluca");
+                comboBox2.Items.Add("Manavgat");
+                comboBox2.Items.Add("Muratpaşa");
+                comboBox2.Items.Add("Serik");
+            }
+            else if (comboBox1.SelectedIndex == 7) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("");
+            }
+        }
     }
 }
