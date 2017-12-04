@@ -1,5 +1,4 @@
 # The-Master
 
- Fonksiyonel günlük kullanımda genellikle okullarda kullanılabilecek ve işlere kolaylık getirecek uygulama.
- 
- Açık kaynak kodludur. Kendiniz düzenleyebilirsiniz.
+ Bu branch içerisinde bulunan dosyalar kullanılabilir değildir!
+ Hala kodlanma aşamasındadır. Eklemeler yapılacaktır.
