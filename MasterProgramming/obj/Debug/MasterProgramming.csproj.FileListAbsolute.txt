@@ -22,3 +22,5 @@ C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\Maste
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Debug\MasterProgramming.rasgele.resources
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Debug\MasterProgramming.bksh.resources
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Debug\MasterProgramming.kb.resources
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Debug\Interop.Shell32.dll
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Debug\MasterProgramming.csproj.ResolveComReference.cache
