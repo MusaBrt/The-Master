@@ -942,6 +942,54 @@ namespace MasterProgramming
                 comboBox2.Items.Add("Sungurlu");
                 comboBox2.Items.Add("Uğurludağ"); // çorum sonuncu
             }
+            else if (comboBox1.SelectedIndex == 19) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("İl Merkezi");
+                comboBox2.Items.Add("Acıpayam");
+                comboBox2.Items.Add("Babadağ");
+                comboBox2.Items.Add("Baklan");
+                comboBox2.Items.Add("Bekilli");
+                comboBox2.Items.Add("Beyağaç");
+                comboBox2.Items.Add("Bozkurt");
+                comboBox2.Items.Add("Buldan");
+                comboBox2.Items.Add("Çal");
+                comboBox2.Items.Add("Çameli");
+                comboBox2.Items.Add("Çardak");
+                comboBox2.Items.Add("Çivril");
+                comboBox2.Items.Add("Güney");
+                comboBox2.Items.Add("Honaz");
+                comboBox2.Items.Add("Kale");
+                comboBox2.Items.Add("Merkezefendi");
+                comboBox2.Items.Add("Pamukkale");
+                comboBox2.Items.Add("Sarayköy");
+                comboBox2.Items.Add("Serinhisar");
+                comboBox2.Items.Add("Tavas");
+            }
+            else if (comboBox1.SelectedIndex == 20) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("İl Merkezi");
+                comboBox2.Items.Add("Bağlar");
+                comboBox2.Items.Add("Bismil");
+                comboBox2.Items.Add("Çermik");
+                comboBox2.Items.Add("Çınar");
+                comboBox2.Items.Add("Dicle");
+                comboBox2.Items.Add("Eğil");
+                comboBox2.Items.Add("Ergani");
+                comboBox2.Items.Add("Hani");
+                comboBox2.Items.Add("Hazro");
+                comboBox2.Items.Add("Kayapınar");
+                comboBox2.Items.Add("Kocaköy");
+                comboBox2.Items.Add("Kulp");
+                comboBox2.Items.Add("Lice");
+                comboBox2.Items.Add("Silvan");
+                comboBox2.Items.Add("Sur");
+                comboBox2.Items.Add("Yenişehir");//diyarbakır bitti
+            }
+            else if (comboBox1.SelectedIndex == 21) {
+                comboBox2.Items.Clear();
+                comboBox2.Items.Add("İl Merkezi");
+                comboBox2.Items.Add("");
+            }
         }
     }
 }
