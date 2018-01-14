@@ -151,5 +151,10 @@ namespace MasterProgramming
 
         }
 
+        private void texter_keypress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
     }
 }

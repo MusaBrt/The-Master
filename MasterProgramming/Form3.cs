@@ -29,10 +29,7 @@ namespace MasterProgramming
 
         private void textbox_keypress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = Char.IsLetter(e.KeyChar);
-            
-            
-
+            e.Handled = Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar);
         }
 
         bool toplama = false;
@@ -406,10 +403,10 @@ namespace MasterProgramming
                         eksi = false;
                     }
                     else {
-                        double sayi;
+                        object sayi;
                         string son;
 
-                        sayi = Convert.ToDouble(textBox1.Text);
+                        sayi = textBox1.Text;
 
                         son = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
 
