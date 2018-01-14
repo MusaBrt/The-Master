@@ -30,13 +30,8 @@ namespace MasterProgramming
         private void textbox_keypress(object sender, KeyPressEventArgs e)
         {
             e.Handled = Char.IsLetter(e.KeyChar);
-
-            if (textBox1.Text != "(")
-            {
-                e.Handled = !char.IsDigit(e.KeyChar);
-            }
-            // && !char.IsControl(e.KeyChar);
-            //  || textBox2.Text != "(" || textBox1.Text != ")" || textBox2.Text != ")"
+            
+            
 
         }
 
@@ -45,7 +40,6 @@ namespace MasterProgramming
         bool top2 = false;
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (textBox1.Text != "")
             {
                 if (label4.Text == "0")
@@ -62,9 +56,6 @@ namespace MasterProgramming
                     label1.Text = "+ ";
                     top2 = true;
                 }
-
-
-                
             }
 
         }
@@ -125,6 +116,16 @@ namespace MasterProgramming
                     carpma = false;
 
                 }
+                else if (carp2 == true) {
+                    double sonuc;
+                    double sayi2carp;
+                    sayi2carp = Convert.ToDouble(textBox1.Text);
+                    sonuc = sayi1carp * sayi2carp;
+                    label4.Text = "" + sonuc;
+                    carp2 = false;
+
+                    
+                }
                 else if (bolme == true)
                 {
                     double sonuc;
@@ -133,8 +134,16 @@ namespace MasterProgramming
                     sayi2bol = Convert.ToDouble(textBox1.Text);
                     sonuc = sayi1bol / sayi2bol;
                     label4.Text = "" + sonuc;
-                    
+
                     bolme = false;
+                }
+                else if (bol2 == true) {
+                    double sonuc;
+                    double sayi2bol;
+                    sayi2bol = Convert.ToDouble(textBox1.Text);
+                    sonuc = sayi1bol / sayi2bol;
+                    label4.Text = "" + sonuc;
+                    bol2 = false;
                 }
                 else if (uslu == true)
                 {
@@ -144,9 +153,16 @@ namespace MasterProgramming
                     us2 = Convert.ToInt32(textBox1.Text);
                     sonuc = Math.Pow(us1, us2);
                     label4.Text = "" + sonuc;
-                    
-                    uslu = false;
 
+                    uslu = false;
+                }
+                else if (uss2 == true) {
+                    double sonuc;
+                    int us2;
+                    us2 = Convert.ToInt32(textBox1.Text);
+                    sonuc = Math.Pow(us1, us2);
+                    label4.Text = "" + sonuc;
+                    uss2 = false;
                 }
             }
             
@@ -206,7 +222,7 @@ namespace MasterProgramming
                     sayi1carp = Convert.ToDouble(label4.Text);
                     carp2 = true;
                     textBox1.Text = "";
-                    label1.Text = "x "; // eşittir tarafı yapılmadı carpma 2 
+                    label1.Text = "x ";
                 }
 
 
@@ -214,13 +230,26 @@ namespace MasterProgramming
         }
         double sayi1bol;
         bool bolme = false;
+        bool bol2 = false;
         private void button4_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "") {
-                sayi1bol = Convert.ToDouble(textBox1.Text);
-                bolme = true;
-                textBox1.Text = "";
-                label1.Text = "/ ";
+                if (label4.Text == "0")
+                {
+                    sayi1bol = Convert.ToDouble(textBox1.Text);
+                    bolme = true;
+                    textBox1.Text = "";
+                    label1.Text = "/ ";
+                }
+                else if (label4.Text != "0") {
+                    sayi1bol = Convert.ToDouble(label4.Text);
+                    bol2 = true;
+                    textBox1.Text = "";
+                    label1.Text = "/ ";
+                }
+                
+            
+            
             }
 
         }
@@ -291,14 +320,30 @@ namespace MasterProgramming
 
         private void button21_Click(object sender, EventArgs e)
         {
-            double sayi, faktoriyel = 1;
-
-            sayi = Convert.ToDouble(textBox1.Text); // Dışarıdan aldığımız string sayısını int’e çeviriyoruz.
-            for (int i = 1; i <= sayi; i++)
+            if (textBox1.Text != "")
             {
-                faktoriyel *= i; // her döngüde faktöriyel i ile çarpılıyor.
+                if (label4.Text == "0")
+                {
+                    double sayi, faktoriyel = 1;
+
+                    sayi = Convert.ToDouble(textBox1.Text); // Dışarıdan aldığımız string sayısını int’e çeviriyoruz.
+                    for (int i = 1; i <= sayi; i++)
+                    {
+                        faktoriyel *= i; // her döngüde faktöriyel i ile çarpılıyor.
+                    }
+                    label4.Text = faktoriyel.ToString();
+                }
+                else if (label4.Text != "0") {
+                    double sayi, faktoriyel = 1;
+                    sayi = Convert.ToDouble(label4.Text);
+                    for (int i = 1; i <= sayi; i++)
+                    {
+                        faktoriyel *= i; // her döngüde faktöriyel i ile çarpılıyor.
+                    }
+                    label4.Text = faktoriyel.ToString();
+
+                }
             }
-            label4.Text = faktoriyel.ToString();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -408,16 +453,36 @@ namespace MasterProgramming
         }
         int us1 = 0;
         bool uslu = false;
+        bool uss2 = false;
         private void button24_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "") {
-                us1 = Convert.ToInt32(textBox1.Text);
-                uslu = true;
-                textBox1.Text = "";
-                label1.Text = "Üs";
+            if (textBox1.Text != "")
+            {
+                if (label4.Text == "0")
+                {
+                    us1 = Convert.ToInt32(textBox1.Text);
+                    uslu = true;
+                    textBox1.Text = "";
+                    label1.Text = "Üs";
+                }
+                else if (label4.Text != "0") {
+                    us1 = Convert.ToInt32(label4.Text);
+                    uss2 = true;
+                    textBox1.Text = "";
+                    label1.Text = "Üs";
+                }
+
             }
+
         }
 
-        
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "") { }
+            else
+            {
+                textBox1.Text += ",";
+            }
+        }
     }
 }

@@ -38,6 +38,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,9 +89,9 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(136, 169);
+            this.button5.Location = new System.Drawing.Point(123, 169);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(181, 59);
+            this.button5.Size = new System.Drawing.Size(194, 59);
             this.button5.TabIndex = 5;
             this.button5.Text = "Büyük Küçük Sayı";
             this.button5.UseVisualStyleBackColor = true;
@@ -112,7 +113,7 @@
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button6.Location = new System.Drawing.Point(336, 169);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(181, 59);
+            this.button6.Size = new System.Drawing.Size(196, 59);
             this.button6.TabIndex = 8;
             this.button6.Text = "Yüzdelik Hesaplama";
             this.button6.UseVisualStyleBackColor = true;
@@ -121,7 +122,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(652, 290);
+            this.label2.Location = new System.Drawing.Point(649, 357);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 9;
@@ -129,13 +130,24 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Location = new System.Drawing.Point(236, 234);
+            this.button7.Location = new System.Drawing.Point(239, 287);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(181, 47);
             this.button7.TabIndex = 10;
             this.button7.Text = "Rastgele Sayı";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button8.Location = new System.Drawing.Point(193, 234);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(278, 47);
+            this.button8.TabIndex = 11;
+            this.button8.Text = "Text Formatter";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // Form1
             // 
@@ -144,7 +156,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(686, 323);
+            this.ClientSize = new System.Drawing.Size(686, 419);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
@@ -176,6 +189,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
