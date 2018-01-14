@@ -21,18 +21,24 @@ namespace MasterProgramming
         private void button1_Click(object sender, EventArgs e)
         {
             string yol = @"C:\Windows\Temp\TextFormatter.txt";
+            string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
             FileStream oku = new FileStream(yol, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             StreamReader okut = new StreamReader(oku);
             string onek = okut.ReadLine();
             string sonek = okut.ReadLine();
             int a = 32;
+            FileStream yaz = new FileStream(yol1, FileMode.OpenOrCreate);
+            StreamWriter kaydet = new StreamWriter(yaz);
+            string satir;
             for (int i = 0; i < 16; i++)
             {
                 string kutu = ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text;
                 ((TextBox)this.Controls["textBox" + (a).ToString()]).Text = onek + kutu + sonek;
+                satir = Convert.ToString(((TextBox)this.Controls["textBox" + (a).ToString()]).Text);
+                kaydet.WriteLine(Convert.ToString(satir));
                 a--;
-
             }
+            kaydet.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,6 +66,7 @@ namespace MasterProgramming
         {
             Form11 f2 = new Form11();
             f2.Show();
+            this.Hide();
         }
 
         private void textBox1_KeyPress(object sender, EventArgs e)
@@ -82,6 +89,66 @@ namespace MasterProgramming
             Form1 f1 = new Form1();
             f1.Show();
             this.Hide();
+        }
+
+        private void Form10_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+            File.Delete(@"C:\Windows\Temp\TextFormatter.txt");
+        }
+
+        private void teks_keypress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 22)
+            {
+                if (Clipboard.GetText().Contains("\n"))
+                {
+                    string[] dizi = new string[0];
+                    dizi = Clipboard.GetText().Split('\n');
+                    for (int i = 0; i < dizi.Length; i++) {
+                        try
+                        {
+                            ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text = dizi[i].ToString();
+                        }
+                        catch {
+                            MessageBox.Show("textbox bitti");
+                            break;
+                        }
+                    }
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sv = new SaveFileDialog();
+            sv.Title = "Çıktı txt kaydet";
+            sv.Filter = "(*.txt)|*.txt|Tüm dosyalar(*.*)|*.*";
+            sv.FilterIndex = 1;
+            sv.InitialDirectory = "C:\\";
+            sv.ShowDialog();
+            if (sv.ShowDialog() == DialogResult.OK)
+            {
+                string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
+                FileStream oku = new FileStream(yol1, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                FileStream son = new FileStream(sv.FileName, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                StreamWriter yaz = new StreamWriter(son);
+                StreamReader okut = new StreamReader(oku);
+                string yazi = okut.ReadLine();
+                for (int i = 0; i < yazi.Length; i++)
+                {
+                    yaz.WriteLine(Convert.ToString(yazi));
+                    yazi = okut.ReadLine();
+                }
+                yaz.Close();
+
+            }
+            else {
+                MessageBox.Show("Dosyanız kaydedilmedi!", "Text Formatter", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
+
         }
 
     }

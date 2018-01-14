@@ -24,3 +24,5 @@ C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\Maste
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.kb.resources
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\Interop.Shell32.dll
 C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.csproj.ResolveComReference.cache
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.Form10.resources
+C:\Users\MusaBerat\documents\visual studio 2012\Projects\MasterProgramming\MasterProgramming\obj\Release\MasterProgramming.Form11.resources
