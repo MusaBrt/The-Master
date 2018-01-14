@@ -396,9 +396,9 @@ namespace MasterProgramming
 
                     if (textBox1.Text == "-")
                     {
-                        double sayi;
+                        object sayi;
                         string son;
-                        sayi = Convert.ToDouble(textBox1.Text);
+                        sayi = Convert.ToString(textBox1.Text);
 
                         son = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
 
