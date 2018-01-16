@@ -19,49 +19,42 @@ namespace MasterProgramming
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
             string yol = @"C:\Windows\Temp\TextFormatter.txt";
-            string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
-            FileStream oku = new FileStream(yol, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-            StreamReader okut = new StreamReader(oku);
-            string onek = okut.ReadLine();
-            string sonek = okut.ReadLine();
-            int a = 32;
-            FileStream yaz = new FileStream(yol1, FileMode.OpenOrCreate);
-            StreamWriter kaydet = new StreamWriter(yaz);
-            string satir;
-            for (int i = 0; i < 16; i++)
+            if (File.Exists(yol))
             {
-                string kutu = ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text;
-                ((TextBox)this.Controls["textBox" + (a).ToString()]).Text = onek + kutu + sonek;
-                satir = Convert.ToString(((TextBox)this.Controls["textBox" + (a).ToString()]).Text);
-                kaydet.WriteLine(Convert.ToString(satir));
-                a--;
+
+                string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
+                FileStream oku = new FileStream(yol, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                StreamReader okut = new StreamReader(oku);
+                string onek = okut.ReadLine();
+                string sonek = okut.ReadLine();
+                int a = 32;
+                FileStream yaz = new FileStream(yol1, FileMode.OpenOrCreate);
+                StreamWriter kaydet = new StreamWriter(yaz);
+                string satir;
+                for (int i = 0; i < 16; i++)
+                {
+                    string kutu = ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text;
+                    ((TextBox)this.Controls["textBox" + (a).ToString()]).Text = onek + kutu + sonek;
+                    satir = Convert.ToString(((TextBox)this.Controls["textBox" + (a).ToString()]).Text);
+                    kaydet.WriteLine(Convert.ToString(satir));
+                    a--;
+                }
+                kaydet.Dispose();
+                okut.Dispose();
+                oku.Dispose();
+                yaz.Dispose();
             }
-            kaydet.Close();
+            else {
+                MessageBox.Show("Lütfen ekleri ayarlayınız.", "Text Formatter", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Eğer hepsinin aynı parametrelerden oluşmasını istiyorsanız sadece ilk 2 sini doldurmanız yeter.\nAma istemiyorsanız hepsini doldurabilirsiniz. (Doldurmadığınız alanlar boş çıkacak.)", "Text Formatter", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            ToolTip yeni = new ToolTip();
-            yeni.SetToolTip(this.button1, "Girdiğiniz metinleri değiştirme işlemini başlatır.");
-            yeni.ToolTipTitle = "Çalıştır!";
-
-            yeni.AutoPopDelay = 5000;
-            yeni.InitialDelay = 1000;
-            yeni.ReshowDelay = 500;
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Form11 f2 = new Form11();
@@ -73,17 +66,6 @@ namespace MasterProgramming
         {
             
         }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (File.Exists(@"C:\Windows\Temp\TextFormatter.txt"))
-            {
-                string yol = @"C:\Windows\Temp\TextFormatter.txt";
-                File.Delete(yol);
-            }
-
-        }
-
         private void button2_Click_1(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();
@@ -93,8 +75,23 @@ namespace MasterProgramming
 
         private void Form10_FormClosed(object sender, FormClosedEventArgs e)
         {
+            
+            if (File.Exists(@"C:\Windows\Temp\TextFormatter.txt"))
+            {
+                if (File.Exists(@"C:\Windows\Temp\TextKaydet.txt"))
+                {
+                    string yol2 = @"C:\Windows\Temp\TextKaydet.txt";
+                    File.Delete(yol2);
+                }
+
+                string yol = @"C:\Windows\Temp\TextFormatter.txt";
+                File.Delete(yol);
+            }
+            else if (File.Exists(@"C:\Windows\Temp\TextKaydet.txt")) {
+                string yol = @"C:\Windows\Temp\TextKaydet.txt";
+                File.Delete(yol);
+            }
             Application.Exit();
-            File.Delete(@"C:\Windows\Temp\TextFormatter.txt");
         }
 
         private void teks_keypress(object sender, KeyPressEventArgs e)
@@ -122,38 +119,45 @@ namespace MasterProgramming
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sv = new SaveFileDialog();
-            sv.Title = "Çıktı txt kaydet";
-            sv.Filter = "(*.txt)|*.txt|Tüm dosyalar(*.*)|*.*";
-            sv.FilterIndex = 1;
-            sv.InitialDirectory = "C:\\";
-            sv.ShowDialog();
-            if (sv.ShowDialog() == DialogResult.OK)
-            {
-                string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
-                FileStream oku = new FileStream(yol1, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-                FileStream son = new FileStream(sv.FileName, FileMode.OpenOrCreate, FileAccess.ReadWrite);
-                StreamWriter yaz = new StreamWriter(son);
-                StreamReader okut = new StreamReader(oku);
-                string yazi = okut.ReadLine();
-                for (int i = 0; i < yazi.Length; i++)
-                {
-                    yaz.WriteLine(Convert.ToString(yazi));
-                    yazi = okut.ReadLine();
-                }
-                yaz.Close();
+            string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
+            FileStream oku = new FileStream(yol1, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            StreamReader okut = new StreamReader(oku);
+            string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
 
+            if (File.Exists(desktop + @"\TextKaydet.txt"))
+            {
+                File.Move(desktop + @"\TextKaydet.txt", desktop + @"\OldTextKaydet.txt");
+                File.Copy(yol1, desktop + @"\TextKaydet.txt");
             }
             else {
-                MessageBox.Show("Dosyanız kaydedilmedi!", "Text Formatter", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                File.Copy(yol1, desktop + @"\TextKaydet.txt");
             }
-            
-
+            oku.Dispose();
+            okut.Dispose();
         }
 
         private void texter_keypress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
+            ToolTip yeni = new ToolTip();
+            yeni.SetToolTip(this.button1, "Girdiğiniz metinleri değiştirme işlemini başlatır.");
+            yeni.ToolTipTitle = "Çalıştır!";
+
+            yeni.AutoPopDelay = 5000;
+            yeni.InitialDelay = 1000;
+            yeni.ReshowDelay = 500;
+
+            ToolTip but3 = new ToolTip();
+            but3.SetToolTip(this.button3, "Ön ek ve son ekleri değiştirmenizi sağlayacak olan pencere açılır.");
+            but3.ToolTipTitle = "Düzenle!";
+
+            but3.AutoPopDelay = 5000;
+            but3.InitialDelay = 1000;
+            but3.ReshowDelay = 500;
         }
 
     }

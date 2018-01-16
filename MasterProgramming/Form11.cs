@@ -17,7 +17,6 @@ namespace MasterProgramming
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (File.Exists(@"C:\Windows\Temp\TextFormatter.txt"))
@@ -65,5 +64,7 @@ namespace MasterProgramming
             Form10 f10 = new Form10();
             f10.Show();
         }
+
+        public bool dosya { get; set; }
     }
 }

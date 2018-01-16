@@ -988,7 +988,7 @@ namespace MasterProgramming
             else if (comboBox1.SelectedIndex == 21) {
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("İl Merkezi");
-                comboBox2.Items.Add("");
+
             }
         }
     }
