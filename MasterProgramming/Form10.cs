@@ -36,7 +36,10 @@ namespace MasterProgramming
                 for (int i = 0; i < 16; i++)
                 {
                     string kutu = ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text;
-                    ((TextBox)this.Controls["textBox" + (a).ToString()]).Text = onek + kutu + sonek;
+                    string yazi = onek + kutu + sonek;
+                    byte[] utyaz = System.Text.Encoding.UTF8.GetBytes(yazi);
+                    string sonyazi = System.Text.Encoding.UTF8.GetString(utyaz);
+                    ((TextBox)this.Controls["textBox" + (a).ToString()]).Text = sonyazi;
                     satir = Convert.ToString(((TextBox)this.Controls["textBox" + (a).ToString()]).Text);
                     kaydet.WriteLine(Convert.ToString(satir));
                     a--;
@@ -45,6 +48,8 @@ namespace MasterProgramming
                 okut.Dispose();
                 oku.Dispose();
                 yaz.Dispose();
+                
+
             }
             else {
                 MessageBox.Show("Lütfen ekleri ayarlayınız.", "Text Formatter", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -123,7 +128,6 @@ namespace MasterProgramming
             FileStream oku = new FileStream(yol1, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             StreamReader okut = new StreamReader(oku);
             string desktop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-
             if (File.Exists(desktop + @"\TextKaydet.txt"))
             {
                 File.Move(desktop + @"\TextKaydet.txt", desktop + @"\OldTextKaydet.txt");
@@ -158,6 +162,93 @@ namespace MasterProgramming
             but3.AutoPopDelay = 5000;
             but3.InitialDelay = 1000;
             but3.ReshowDelay = 500;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i <= 16; i++) {
+                ((TextBox)this.Controls["textBox" + (i + 1).ToString()]).Text = "";
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = "";
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = "";
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            textBox4.Text = "";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = "";
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            textBox6.Text = "";
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            textBox7.Text = "";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            textBox8.Text = "";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            textBox9.Text = "";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            textBox10.Text = "";
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            textBox11.Text = "";
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            textBox12.Text = "";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textBox13.Text = "";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox14.Text = "";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox15.Text = "";
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox16.Text = "";
         }
 
     }
