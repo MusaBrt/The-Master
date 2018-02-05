@@ -93,5 +93,12 @@ namespace MasterProgramming
             fr10.Show();
             this.Hide();
         }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            acevre ac = new acevre();
+            ac.Show();
+            this.Hide();
+        }
     }
 }

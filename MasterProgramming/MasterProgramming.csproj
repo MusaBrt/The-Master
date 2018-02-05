@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="acevre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acevre.Designer.cs">
+      <DependentUpon>acevre.cs</DependentUpon>
+    </Compile>
     <Compile Include="bksh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <Compile Include="rasgele.Designer.cs">
       <DependentUpon>rasgele.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="acevre.resx">
+      <DependentUpon>acevre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bksh.resx">
       <DependentUpon>bksh.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +249,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rasgele.resx">
       <DependentUpon>rasgele.cs</DependentUpon>
@@ -261,6 +271,7 @@
   <ItemGroup>
     <Content Include="Alecive-Flatwoken-Apps-Telegram.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Html-tags.ico" />
+    <None Include="Resources\Regular_triangle.svg.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
