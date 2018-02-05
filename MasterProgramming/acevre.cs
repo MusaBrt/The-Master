@@ -106,8 +106,20 @@ namespace MasterProgramming
             else {
                 MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        public void clear() {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+        }
 
-
+        private void yeniToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clear();
         }
     }
 }

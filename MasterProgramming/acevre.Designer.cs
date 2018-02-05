@@ -98,8 +98,9 @@
             // yeniToolStripMenuItem
             // 
             this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.yeniToolStripMenuItem.Text = "Yeni";
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.yeniToolStripMenuItem.Text = "Temizle";
+            this.yeniToolStripMenuItem.Click += new System.EventHandler(this.yeniToolStripMenuItem_Click);
             // 
             // anaMenüToolStripMenuItem
             // 
