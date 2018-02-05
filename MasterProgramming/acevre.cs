@@ -89,5 +89,25 @@ namespace MasterProgramming
                 checkBox1.Checked = false;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "")
+            {
+                double cevresonuc, alansonuc, sayi1, sayi2, sayi3, sayi4;
+                sayi1 = Convert.ToDouble(textBox4.Text);
+                sayi2 = Convert.ToDouble(textBox5.Text);
+                sayi3 = Convert.ToDouble(textBox6.Text);
+                sayi4 = Convert.ToDouble(textBox7.Text);
+                cevresonuc = sayi1 + sayi2 + sayi3 + sayi4;
+                alansonuc = sayi2 * sayi4;
+                MessageBox.Show("Verilen dörtgenin çevresi= " + cevresonuc + "\nVerilen dörtgenin alanı= " + alansonuc + "", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else {
+                MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+
+        }
     }
 }
