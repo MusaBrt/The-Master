@@ -271,6 +271,7 @@
   <ItemGroup>
     <Content Include="Alecive-Flatwoken-Apps-Telegram.ico" />
     <Content Include="Graphicloads-Colorful-Long-Shadow-Html-tags.ico" />
+    <None Include="Resources\pentagon1.png" />
     <None Include="Resources\Regular_triangle.svg1.png" />
     <None Include="Resources\sekizgen_125026.png" />
     <None Include="Resources\512px-Heptagon.svg.png" />

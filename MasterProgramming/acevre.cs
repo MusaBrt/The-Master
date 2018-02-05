@@ -115,11 +115,31 @@ namespace MasterProgramming
             textBox5.Text = "";
             textBox6.Text = "";
             textBox7.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
         }
 
         private void yeniToolStripMenuItem_Click(object sender, EventArgs e)
         {
             clear();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox8.Text != "" && textBox9.Text != "")
+            {
+                double sayi1, sayi2, cevresonuc, alansonuc;
+                sayi1 = Convert.ToDouble(textBox8.Text);
+                sayi2 = Convert.ToDouble(textBox9.Text);
+                cevresonuc = 5 * sayi1;
+                alansonuc = 5 * ((sayi1 * sayi2) / 2);
+                MessageBox.Show("Verilen beşgenin çevresi= " + cevresonuc + "\nVerilen beşgenin alanı= " + alansonuc + "", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }
