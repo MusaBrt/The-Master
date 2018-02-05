@@ -63,9 +63,69 @@ namespace MasterProgramming.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _512px_Heptagon_svg {
+            get {
+                object obj = ResourceManager.GetObject("512px-Heptagon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dörtgen {
+            get {
+                object obj = ResourceManager.GetObject("dörtgen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_hexagons {
+            get {
+                object obj = ResourceManager.GetObject("paper hexagons", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pentagon {
+            get {
+                object obj = ResourceManager.GetObject("pentagon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Regular_triangle_svg {
             get {
                 object obj = ResourceManager.GetObject("Regular_triangle.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Regular_triangle1 {
+            get {
+                object obj = ResourceManager.GetObject("Regular_triangle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sekizgen_125026 {
+            get {
+                object obj = ResourceManager.GetObject("sekizgen_125026", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

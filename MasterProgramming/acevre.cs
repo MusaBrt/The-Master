@@ -29,39 +29,65 @@ namespace MasterProgramming
             this.Hide();
 
         }
-        
-        private void büyükToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-            if (tabControl1.Visible == true)
-            {
-                
-                tabControl1.Visible = false;
-                tabControl2.Visible = true;
-                this.Size = new System.Drawing.Size(1073, 674);
-            }
-            else if (tabControl1.Visible == false) { 
-                
-            }
-        }
-
-        private void küçükToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (tabControl2.Visible == true) {
-                tabControl1.Visible = true;
-                tabControl2.Visible = false;
-                this.Size = new System.Drawing.Size(745, 571);
-            }
-            else if (tabControl2.Visible == false) { 
-                
-            }
-        }
 
         private void acevre_Load(object sender, EventArgs e)
         {
-            this.Size = new System.Drawing.Size(745, 571);
+            this.Size = new System.Drawing.Size(902, 626);
             tabControl1.Visible = true;
-            tabControl2.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
+            {
+                double sayi1, sayi2, sayi3;
+                sayi1 = Convert.ToDouble(textBox1.Text);
+                sayi2 = Convert.ToDouble(textBox2.Text);
+                sayi3 = Convert.ToDouble(textBox3.Text);
+                if (checkBox1.Checked == true)
+                {
+                    double alansonuc;
+                    alansonuc = (sayi1 + sayi2 + sayi3) / 2;
+                    MessageBox.Show("Verilen üçgenin alanı: " + alansonuc + "", "Alan Sonucu", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else {
+                    double cevresonuc;
+                    cevresonuc = sayi1 + sayi2 + sayi3;
+                    MessageBox.Show("Verilen üçgenin çevresi: " + cevresonuc + "", "Çevre Sonucu", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
+                }
+            }
+            else {
+                MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            if (checkBox1.Checked == true)
+            {
+                checkBox2.Checked = false;
+                textBox1.Location = new Point(245, 287);
+                
+
+            }
+            else {
+                textBox1.Location = new Point(165, 190);
+                checkBox2.Checked = true;
+
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == false)
+            {
+                checkBox1.Checked = true;
+            }
+            else {
+                checkBox1.Checked = false;
+            }
         }
     }
 }
