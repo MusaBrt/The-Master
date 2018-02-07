@@ -1281,11 +1281,10 @@ namespace MasterProgramming
                 comboBox2.Items.Add("İl Merkezi");
                  //kayseri
             }
-            else if (comboBox1.SelectedIndex == 38) {}
+            else if (comboBox1.SelectedIndex == 38) {
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("İl Merkezi");
-                
-
+            }
         }
     }
 }
