@@ -121,7 +121,6 @@ namespace MasterProgramming
                 }
             }
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             string yol1 = @"C:\Windows\Temp\TextKaydet.txt";
@@ -133,7 +132,8 @@ namespace MasterProgramming
                 File.Move(desktop + @"\TextKaydet.txt", desktop + @"\OldTextKaydet.txt");
                 File.Copy(yol1, desktop + @"\TextKaydet.txt");
             }
-            else {
+            else
+            {
                 File.Copy(yol1, desktop + @"\TextKaydet.txt");
             }
             oku.Dispose();

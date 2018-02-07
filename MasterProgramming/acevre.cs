@@ -117,6 +117,8 @@ namespace MasterProgramming
             textBox7.Text = "";
             textBox8.Text = "";
             textBox9.Text = "";
+            textBox10.Text = "";
+            textBox11.Text = "";
         }
 
         private void yeniToolStripMenuItem_Click(object sender, EventArgs e)
@@ -140,6 +142,44 @@ namespace MasterProgramming
                 MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox10.Text != "" && textBox11.Text != "")
+            {
+                double sayi1 = Convert.ToDouble(textBox10.Text), sayi2 = Convert.ToDouble(textBox11.Text);
+                double cevresonuc = sayi2 * 6;
+                double alansonuc = 6 * ((sayi1 * sayi2) / 2);
+                MessageBox.Show("Verilen altıgenin çevresi= " + cevresonuc + "\nVerilen altıgenin alanı= " + alansonuc + "", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else {
+                MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void pictureBox1_Click(object sender, EventArgs e) 
+        { 
+            
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox12.Text != "" && textBox13.Text != "")
+            {
+                double sayi1 = Convert.ToDouble(textBox12.Text), sayi2 = Convert.ToDouble(textBox13.Text);
+                double cevresonuc = sayi2 * 8;
+                double alansonuc = 8 * ((sayi1 * sayi2) / 2);
+                MessageBox.Show("Verilen sekizgenin çevresi= " + cevresonuc + "\nVerilen sekizgenin alanı= " + alansonuc + "", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                MessageBox.Show("Lütfen uzunlukları giriniz!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yedigenin alan hesaplama förmülü uzundu üşendim. Ama uğraşıcam!", "Alan Çevre", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
