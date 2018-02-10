@@ -119,6 +119,8 @@ namespace MasterProgramming
             textBox9.Text = "";
             textBox10.Text = "";
             textBox11.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
         }
 
         private void yeniToolStripMenuItem_Click(object sender, EventArgs e)

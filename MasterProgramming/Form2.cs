@@ -1279,6 +1279,22 @@ namespace MasterProgramming
             else if (comboBox1.SelectedIndex == 37) {
                 comboBox2.Items.Clear();
                 comboBox2.Items.Add("İl Merkezi");
+                comboBox2.Items.Add("Akkışla");
+                comboBox2.Items.Add("Bünyan");
+                comboBox2.Items.Add("Develi");
+                comboBox2.Items.Add("Felahiye");
+                comboBox2.Items.Add("Hacılar");
+                comboBox2.Items.Add("İncesu");
+                comboBox2.Items.Add("Kocasinan");
+                comboBox2.Items.Add("Melikgazi");
+                comboBox2.Items.Add("Özvatan");
+                comboBox2.Items.Add("Pınarbaşı");
+                comboBox2.Items.Add("Sarıoğlan");
+                comboBox2.Items.Add("Sarız");
+                comboBox2.Items.Add("Talas");
+                comboBox2.Items.Add("Tomarza");
+                comboBox2.Items.Add("Yahyalı");
+                comboBox2.Items.Add("Yeşilhisar");
                  //kayseri
             }
             else if (comboBox1.SelectedIndex == 38) {

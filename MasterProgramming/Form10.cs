@@ -101,6 +101,9 @@ namespace MasterProgramming
 
         private void teks_keypress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == 13) {
+                gecis();
+            }
             if (e.KeyChar == 22)
             {
                 if (Clipboard.GetText().Contains("\n"))
@@ -118,6 +121,34 @@ namespace MasterProgramming
                         }
                     }
                     e.Handled = true;
+                }
+            }
+        }
+        private void gecis() {
+            /*if (this.ActiveControl == textBox1) {
+                this.ActiveControl = textBox2;
+            }
+            else if (this.ActiveControl == textBox2) {
+                this.ActiveControl = textBox3;
+            }
+            else if (this.ActiveControl == textBox3) {
+                this.ActiveControl = textBox4;
+            }
+            else if (this.ActiveControl == textBox4) { 
+                this.ActiveControl = textBox5;
+            }
+            else if (this.ActiveControl == textBox5) {
+                this.ActiveControl = textBox6;   
+            }
+            else if (this.ActiveControl == textBox6) {
+                this.ActiveControl = textBo7; 
+            }
+             
+             
+             */
+            for (int i = 0; i <= 16; i++) {
+                if (this.ActiveControl == (TextBox)this.Controls["textBox" + (i + 1).ToString()]) {
+                    this.ActiveControl = (TextBox)this.Controls["textBox" + (i + 2).ToString()];
                 }
             }
         }

@@ -122,6 +122,7 @@
             // 
             this.textBox17.Location = new System.Drawing.Point(327, 449);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(438, 20);
             this.textBox17.TabIndex = 74;
             this.textBox17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -130,6 +131,7 @@
             // 
             this.textBox18.Location = new System.Drawing.Point(327, 423);
             this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(438, 20);
             this.textBox18.TabIndex = 73;
             this.textBox18.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -138,6 +140,7 @@
             // 
             this.textBox19.Location = new System.Drawing.Point(327, 397);
             this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(438, 20);
             this.textBox19.TabIndex = 72;
             this.textBox19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -146,6 +149,7 @@
             // 
             this.textBox20.Location = new System.Drawing.Point(327, 371);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(438, 20);
             this.textBox20.TabIndex = 71;
             this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -154,6 +158,7 @@
             // 
             this.textBox21.Location = new System.Drawing.Point(327, 345);
             this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(438, 20);
             this.textBox21.TabIndex = 70;
             this.textBox21.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -162,6 +167,7 @@
             // 
             this.textBox22.Location = new System.Drawing.Point(327, 319);
             this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(438, 20);
             this.textBox22.TabIndex = 69;
             this.textBox22.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -170,6 +176,7 @@
             // 
             this.textBox23.Location = new System.Drawing.Point(327, 293);
             this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(438, 20);
             this.textBox23.TabIndex = 68;
             this.textBox23.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -178,6 +185,7 @@
             // 
             this.textBox24.Location = new System.Drawing.Point(327, 267);
             this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(438, 20);
             this.textBox24.TabIndex = 67;
             this.textBox24.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -186,6 +194,7 @@
             // 
             this.textBox25.Location = new System.Drawing.Point(327, 241);
             this.textBox25.Name = "textBox25";
+            this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(438, 20);
             this.textBox25.TabIndex = 66;
             this.textBox25.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -194,6 +203,7 @@
             // 
             this.textBox26.Location = new System.Drawing.Point(327, 215);
             this.textBox26.Name = "textBox26";
+            this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(438, 20);
             this.textBox26.TabIndex = 65;
             this.textBox26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -202,6 +212,7 @@
             // 
             this.textBox27.Location = new System.Drawing.Point(327, 189);
             this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(438, 20);
             this.textBox27.TabIndex = 64;
             this.textBox27.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -210,6 +221,7 @@
             // 
             this.textBox28.Location = new System.Drawing.Point(327, 163);
             this.textBox28.Name = "textBox28";
+            this.textBox28.ReadOnly = true;
             this.textBox28.Size = new System.Drawing.Size(438, 20);
             this.textBox28.TabIndex = 63;
             this.textBox28.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -218,6 +230,7 @@
             // 
             this.textBox29.Location = new System.Drawing.Point(327, 137);
             this.textBox29.Name = "textBox29";
+            this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(438, 20);
             this.textBox29.TabIndex = 62;
             this.textBox29.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -226,6 +239,7 @@
             // 
             this.textBox30.Location = new System.Drawing.Point(327, 111);
             this.textBox30.Name = "textBox30";
+            this.textBox30.ReadOnly = true;
             this.textBox30.Size = new System.Drawing.Size(438, 20);
             this.textBox30.TabIndex = 61;
             this.textBox30.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -234,6 +248,7 @@
             // 
             this.textBox31.Location = new System.Drawing.Point(327, 85);
             this.textBox31.Name = "textBox31";
+            this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(438, 20);
             this.textBox31.TabIndex = 60;
             this.textBox31.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);
@@ -242,6 +257,7 @@
             // 
             this.textBox32.Location = new System.Drawing.Point(327, 59);
             this.textBox32.Name = "textBox32";
+            this.textBox32.ReadOnly = true;
             this.textBox32.Size = new System.Drawing.Size(438, 20);
             this.textBox32.TabIndex = 59;
             this.textBox32.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.texter_keypress);

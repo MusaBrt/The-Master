@@ -28,17 +28,21 @@ namespace MasterProgramming
             }
             else
             {
-
-                int sayi1 = 0, sayi2 = 0;
+                int sayi1, sayi2;
                 sayi1 = Convert.ToInt32(textBox1.Text);
                 sayi2 = Convert.ToInt32(textBox2.Text);
+                if (sayi1 > sayi2) {
+                    Random rnd = new Random();
+                    double random = rnd.Next(sayi2, sayi1);
 
-                Random rnd = new Random();
-                double random = rnd.Next(sayi1, sayi2);
+                    label4.Text = random.ToString();
+                }
+                else if (sayi2 > sayi1) {
+                    Random rnd = new Random();
+                    double random = rnd.Next(sayi1, sayi2);
 
-                label4.Text = "" + random;
-
-
+                    label4.Text = random.ToString();
+                }
             }
         }
 
@@ -62,38 +66,9 @@ namespace MasterProgramming
             frm1.Show();
             this.Hide();
         }
-
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-            if (textBox1.Text == "")
-            {
-                
-                textBox1.Text += "-";
-            }
-            else
-            { 
-                
-            }
-        }
-
         private void keydown(object sender, KeyEventArgs e)
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (textBox2.Text == "")
-            {
-                textBox2.Text += "-";
-            }
-            else { 
-                
-            }
-        }
-
-
     }
 }
