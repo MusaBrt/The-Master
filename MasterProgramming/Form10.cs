@@ -125,7 +125,7 @@ namespace MasterProgramming
             }
         }
         private void gecis() {
-            /*if (this.ActiveControl == textBox1) {
+            if (this.ActiveControl == textBox1) {
                 this.ActiveControl = textBox2;
             }
             else if (this.ActiveControl == textBox2) {
@@ -141,16 +141,44 @@ namespace MasterProgramming
                 this.ActiveControl = textBox6;   
             }
             else if (this.ActiveControl == textBox6) {
-                this.ActiveControl = textBo7; 
+                this.ActiveControl = textBox7; 
             }
-             
-             
-             */
-            for (int i = 0; i <= 16; i++) {
-                if (this.ActiveControl == (TextBox)this.Controls["textBox" + (i + 1).ToString()]) {
+            else if (this.ActiveControl == textBox7) {
+                this.ActiveControl = textBox8;
+            }
+            else if (this.ActiveControl == textBox8) {
+                this.ActiveControl = textBox9;
+            }
+            else if (this.ActiveControl == textBox9) {
+                this.ActiveControl = textBox10;
+            }
+            else if (this.ActiveControl == textBox10) {
+                this.ActiveControl = textBox11;
+            }
+            else if (this.ActiveControl == textBox11) {
+                this.ActiveControl = textBox12;
+            }
+            else if (this.ActiveControl == textBox12) {
+                this.ActiveControl = textBox13;
+            }
+            else if (this.ActiveControl == textBox13) {
+                this.ActiveControl = textBox14;    
+            }
+            else if (this.ActiveControl == textBox14) {
+                this.ActiveControl = textBox15;
+            }
+            else if (this.ActiveControl == textBox15)
+            {
+                this.ActiveControl = textBox16;
+            }
+            else { }
+            /*for (int i = 0; i <= 16; i++) {
+                if (this.ActiveControl == (TextBox)this.Controls["textBox" + (i + 1).ToString()]) { 
                     this.ActiveControl = (TextBox)this.Controls["textBox" + (i + 2).ToString()];
                 }
             }
+            Eğer yapılabilirse döngü vs. ile yapmaya çalışacağım.
+             */
         }
         private void button4_Click(object sender, EventArgs e)
         {
