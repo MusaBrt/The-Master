@@ -46,22 +46,18 @@ namespace MasterProgramming
             if (son == DialogResult.Yes) {
                 this.Hide();
             }
-
-            
-
-
-
         }
-
+        Form10 f10 = new Form10();
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            
+            this.Hide();
+            f10.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form10 f10 = new Form10();
+            
             f10.Show();
         }
 
