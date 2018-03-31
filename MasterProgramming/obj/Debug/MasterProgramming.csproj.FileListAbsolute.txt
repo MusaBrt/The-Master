@@ -1,0 +1,3 @@
+C:\Users\MusaBerat\Documents\GitHub\The-Master\MasterProgramming\bin\Debug\MasterProgramming.exe.config
+C:\Users\MusaBerat\Documents\GitHub\The-Master\MasterProgramming\obj\Debug\Interop.Shell32.dll
+C:\Users\MusaBerat\Documents\GitHub\The-Master\MasterProgramming\obj\Debug\MasterProgramming.csproj.ResolveComReference.cache
