@@ -5,3 +5,6 @@
  Açık kaynak kodludur. Kendiniz düzenleyebilirsiniz.
 
  Şu anda kodlanırken Visual Studio 2012 kullanılmaktadır.
+
+
+# Artık kodlanmamaktadır.
